@@ -14,9 +14,9 @@ public class GuessingGame {
         secreteNumber = 1 + rand.nextInt(10);
         while (secreteNumber !=  guessNumber){
 
+            System.out.println("Your Guess is " + guessNumber + ". That is not correct. Try again");
+            guessNumber = keyboard.nextInt();
 
-            System.out.println("Your Guess is " + guessNumber + ". That is not correct." + " My number was " + secreteNumber + ".");
-            break;
         }
 
         if (secreteNumber == guessNumber)
